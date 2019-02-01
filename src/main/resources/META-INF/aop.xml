@@ -1,0 +1,7 @@
+<aspectj>
+
+	<weaver options="-Xlint:ignore -verbose -showWeaveInfo">
+		<include within="com.example..*" />
+	</weaver>
+
+</aspectj>
