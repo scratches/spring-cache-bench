@@ -23,7 +23,8 @@ benchmark result. You can also run on the command line with `mvn
 integration-test -DbenchmarksEnabled=true`. The project is set up to
 run the EhCache, proxy version out of the box.
 
-To run with AspectJ put this on the command line in the JVM launcher:
+To run with AspectJ comment out the attribute in the `@EnableCaching`
+annotation and put this on the command line in the JVM launcher:
 `-javaagent:${system_property:user.home}/.m2/repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar`.
 
 To run with the "simple" cache use `spring.cache.type=simple`
